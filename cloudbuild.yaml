@@ -1,5 +1,9 @@
 steps:
   # Chạy apt-get update bằng cách sử dụng image ubuntu mới nhất
   - name: "ubuntu:latest"
-    entrypoint: "apt-get"
-    args: ["update"]
+    id: "update machine"
+    # entrypoint: "apt-get"
+    args: 
+      - "pwd"
+      - "whoami"
+      - "date"
